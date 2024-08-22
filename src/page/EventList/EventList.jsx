@@ -48,11 +48,11 @@ const EventList = () => {
                 sorted = filteredEvents.sort((a, b) => a.name.localeCompare(b.name));
                 break;
             case 'tickets':
-                sorted = filteredEvents.sort((a, b) => b.id - a.id); // Сортировка по ID, где последние добавленные показываются первыми
+                sorted = filteredEvents.sort((a, b) => b.tickets.length - a.tickets.length); // Сортування за кількістю квитків
                 break;
             case 'date':
             default:
-                sorted = filteredEvents.sort((a, b) => new Date(a.date) - new Date(b.date)); // Сортировка по дате
+                sorted = filteredEvents.sort((a, b) => new Date(a.date) - new Date(b.date)); // Сортування за датою
                 break;
         }
         setSortedEvents(sorted);
