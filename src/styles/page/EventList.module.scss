@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+  .container_inner {
+    width: 1350px;
+
+    .title_name {
+      height: 60px;
+      padding: 10px;
+      background-color: #78a15d;
+      align-items: center;
+      display: flex;
+
+      h1 {
+        color: white;
+        font-size: 25px;
+      }
+    }
+
+    .actions {
+      background-color: #1a5277;
+      padding: 10px 10px;
+      margin-bottom: 30px;
+      text-align: center;
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        color: #ffffff;
+      }
+    }
+
+    .block_control {
+      .filtration_actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        input {
+          padding: 10px;
+          font-size: 18px;
+          border: 1px solid #78a15d;
+          background-color: #ffffff;
+          cursor: pointer;
+        }
+
+        .filtration {
+          border: 1px solid #78a15d;
+          background-color: #ffffff;
+
+          .filtrationDropdown {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #78a15d;
+            background-color: #ffffff;
+            cursor: pointer;
+            width: 100%;
+
+            &:focus {
+              outline: none;
+              border-color: #78a15d;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .block_control {
+    padding: 10px;
+
+    .filtration_actions {
+      margin-top: 20px;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      input {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #78a15d;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+
+      .actions {
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+        text-align: center;
+
+        a {
+          font-size: 20px;
+        }
+      }
+
+      .filtration {
+        width: 100%;
+        order: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  font-size: 18px;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}

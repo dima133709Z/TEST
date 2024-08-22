@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+  &_inner {
+    width: 100%;
+    max-width: 1350px;
+    background-color: #ffffff;
+  }
+
+  .title_name {
+    height: 60px;
+    padding: 10px;
+    background-color: #78a15d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h1 {
+      color: white;
+      font-size: 25px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #343434;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #343434;
+  }
+
+  .ticketList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+
+    .ticketItem {
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .btnDelete {
+        align-self: flex-end;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+
+    .ticketItem:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+
+    &.btnSecondary {
+      background-color: #1a5277;
+
+      &:hover {
+        background-color: #78a15d;
+      }
+    }
+
+    &.btnDanger {
+      background-color: #d9534f;
+
+      &:hover {
+        background-color: #c9302c;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .block_control {
+    padding: 10px;
+  }
+
+  .title_name {
+    padding: 10px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  p, h3 {
+    font-size: 18px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
